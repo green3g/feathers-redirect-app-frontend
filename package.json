@@ -1,0 +1,59 @@
+{
+  "name": "feathers-redirect-app-frontend",
+  "version": "1.0.0",
+  "description": "An example app for CanJS, using StealJS.",
+  "author": "Bitovi",
+  "license": "MIT",
+  "homepage": "https://github.com/canjs/feathers-app-admin-gui.js#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/canjs/feathers-app-admin-gui.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/canjs/feathers-app-admin-gui.js/issues"
+  },
+  "keywords": [
+    "CanJS",
+    "DoneJS",
+    "StealJS"
+  ],
+  "main": "src/main.js",
+  "scripts": {
+    "build": "steal-tools build",
+    "clean": "rm -rf dist/bundles dist/steal.production.js",
+    "start": "http-server -c-1"
+  },
+  "dependencies": {
+    "@feathersjs/authentication-client": "^4.5.1",
+    "@feathersjs/feathers": "^4.5.1",
+    "@feathersjs/socketio-client": "^4.5.1",
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "bulma": "^0.8.0",
+    "bulma-extensions": "^6.2.7",
+    "can": "^6.0.0",
+    "can-bulma": "file:../../can-bulma",
+    "feathers-query-logic": "^1.0.1",
+    "lodash.defaults": "^4.2.0",
+    "socket.io-client": "^2.3.0",
+    "steal-less": "^1.3.4",
+    "steal-stache": "^5.0.0",
+    "ws": "^7.2.1"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "steal": "^2.0.0",
+    "steal-css": "^1.3.2",
+    "steal-tools": "^2.0.0"
+  },
+  "steal": {
+    "babelOptions": {
+      "plugins": [
+        "transform-class-properties"
+      ]
+    },
+    "plugins": [
+      "can",
+      "steal-less"
+    ]
+  }
+}

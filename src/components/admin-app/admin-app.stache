@@ -1,0 +1,8 @@
+
+<sp-admin 
+    model:from="model"
+    metadata:from="metadata"
+    searchFields:from="searchFields"
+    filterFields:from="filterFields"
+    editFields:from="editFields"
+    listFields:from="listFields"></sp-admin>

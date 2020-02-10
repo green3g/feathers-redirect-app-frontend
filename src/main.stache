@@ -1,0 +1,32 @@
+
+{{#if(session)}}
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-end">
+    <div class="navbar-item">
+        {{session.user.name}} 
+    </div>
+    <div class="navbar-item">
+        <button class="button is-primary" on:click="logout()">Logout</button>
+    </div>
+    </div>
+</nav>
+
+<hr />
+<admin-app model:from="appModel" />
+
+{{else}}
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-light" href="/oauth/github?redirect=igkyGRwjk6z4vS0y">login via github</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+{{/if}}
+
+
+
